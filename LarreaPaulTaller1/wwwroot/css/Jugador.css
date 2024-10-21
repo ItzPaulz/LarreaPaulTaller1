@@ -1,0 +1,92 @@
+﻿/* Fondo de la página con la imagen de la Liga Pro */
+body {
+    background-image: url('https://mifutbolecuador.files.wordpress.com/2022/02/logo-liga-pro-betcris-2022.png?w=1200');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    
+    cursor: url('https://tortaprint.com/wp-content/uploads/imported/Cialda-per-torta-PALLONE-CALCIO-decorazione-alimentare-senza-glutine-topper-cake-Ostia-18-cm-B07NWQKMQY-2.jpg') 16 16, auto;
+}
+
+/* Contenedor con fondo negro semitransparente para que el contenido sea legible */
+.container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Estilo del título */
+h1, h2, h3 {
+    color: yellow;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px red; /* Efecto de sombra */
+}
+
+/* Botón de crear nuevo equipo */
+.btn-create {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+    .btn-create:hover {
+        background-color: #ff3333;
+    }
+
+/* Estilo de la tabla */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+    .table th, .table td {
+        padding: 10px;
+        text-align: left;
+        color: white;
+    }
+
+    .table th {
+        background-color: blue;
+        color: white;
+    }
+
+    .table td {
+        background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    }
+
+    .table tr:nth-child(even) {
+        background-color: rgba(255, 255, 255, 0.05); /* Alterna el fondo de las filas */
+    }
+
+/* Botones de acción (Editar, Detalles, Eliminar) */
+.btn-action {
+    color: yellow;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+    .btn-action:hover {
+        color: #ffcc00;
+    }
+
+/* Ajusta el footer (si tienes uno) */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-size: 1em;
+}

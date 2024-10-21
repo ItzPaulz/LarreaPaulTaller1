@@ -54,7 +54,7 @@ namespace LarreaPaulTaller1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Direccion,Ciudad,Capacidad")] Estadio estadio)
+        public async Task<IActionResult> Create([Bind("Id,Nombre,Direccion,Ciudad,Capacidad")] Estadio estadio)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace LarreaPaulTaller1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Direccion,Ciudad,Capacidad")] Estadio estadio)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Direccion,Ciudad,Capacidad")] Estadio estadio)
         {
             if (id != estadio.Id)
             {

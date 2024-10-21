@@ -3,6 +3,7 @@ using LarreaPaulTaller1.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LarreaPaulTaller1.Migrations
 {
     [DbContext(typeof(LarreaPaulTaller1Context))]
-    partial class LarreaPaulTaller1ContextModelSnapshot : ModelSnapshot
+    [Migration("20241021000835_Migracion60")]
+    partial class Migracion60
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
